@@ -1,0 +1,10 @@
+{
+  "name": "vocdevkit-dataset",
+  "scripts": {
+    "pre-processed": "node ./scripts/replace-path.js",
+    "create": "node ./scripts/create.js"
+  },
+  "devDependencies": {
+    "lodash": "4"
+  }
+}
