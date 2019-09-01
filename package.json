@@ -5,6 +5,6 @@
     "create": "node ./scripts/create.js"
   },
   "devDependencies": {
-    "lodash": "4"
+    "lodash": "^4.17.15"
   }
 }
