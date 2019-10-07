@@ -2,9 +2,13 @@
   "name": "vocdevkit-dataset",
   "scripts": {
     "pre-processed": "node ./scripts/replace-path.js",
-    "create": "node ./scripts/create.js"
+    "create": "node ./scripts/create.js",
+    "test:graph": "node ./scripts/test-graph.js"
   },
   "devDependencies": {
-    "lodash": "^4.17.15"
+    "dotenv": "^8.1.0",
+    "get-pixels": "^3.3.2",
+    "lodash": "^4.17.15",
+    "macaca-ai-engine": "^1.0.0"
   }
 }
