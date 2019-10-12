@@ -20,7 +20,10 @@ const run = async () => {
     console.log(pixels.shape);
     fs.writeFileSync('./graph/data.js', [
       `window.ocrRes = ${JSON.stringify(res, null, 2)};`,
-      `window.shape = { width: ${pixels.shape[0]} };`
+      `window.shape = ${JSON.stringify({
+        width: pixels.shape[0],
+        height: pixels.shape[1],
+      }, null, 2)};`
     ].join('\n'));
   });
 };
