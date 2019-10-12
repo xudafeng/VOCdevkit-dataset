@@ -49,4 +49,7 @@ window.ocrRes = [
     "y": 762
   }
 ];
-window.shape = { width: 1300 };
+window.shape = {
+  "width": 1300,
+  "height": 922
+};
