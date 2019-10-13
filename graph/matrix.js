@@ -18,6 +18,7 @@ const run = () => {
   
   const {
     result,
+    Q,
     cols,
     originData,
     zoomRate,
@@ -73,37 +74,23 @@ const run = () => {
     </tbody>
   </table>`;
 
+  const tableData = {
+    rows,
+    cols,
+    html,
+    id: +new Date(),
+  };
+
+  qRes.innerHTML = JSON.stringify(tableData, null, 2);
+
   htmlRes.innerHTML = html;
 
   print.innerHTML = JSON.stringify({
     cols,
     rows,
+    Q,
     matrix,
   }, null, 2);
-
-  const isGra1 = R.isGra1(res);
-  console.log(`gra1: ${isGra1}`);
-
-  return;
-  // if (isGra1) {
-  //   return;
-  // }
-  const res2 = R.getQ(originData, {
-    viewWidth: 800,
-    realViewWidth: window.shape.width,
-    realViewHeight: window.shape.height,
-  });
-
-  delete res2.originData;
-
-  qRes.innerHTML = JSON.stringify(res2, null, 2);
-  const isGra2 = R.isGra2(res2);
-  console.log(`gra2: ${isGra2}`);
-
-  if (isGra2) {
-    return;
-  }
-
 };
 
 run();
