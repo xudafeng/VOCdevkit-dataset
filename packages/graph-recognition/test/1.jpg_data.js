@@ -1,4 +1,4 @@
-window.ocrRes = [
+exports.data = [
   {
     "h": 63,
     "text": "MARKETiNG",
@@ -49,7 +49,7 @@ window.ocrRes = [
     "y": 762
   }
 ];
-window.shape = {
+exports.shape = {
   "width": 1300,
   "height": 922
 };

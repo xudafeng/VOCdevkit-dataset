@@ -2,3 +2,5 @@ node_modules/
 *.sw*
 *.un~
 .env
+__*
+data.js
